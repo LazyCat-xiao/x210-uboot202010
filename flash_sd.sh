@@ -13,3 +13,4 @@ do
 done
 dd iflag=dsync oflag=dsync if=210.bin of=$1 seek=1
 dd iflag=dsync oflag=dsync if=u-boot.bin of=$1 seek=33
+#一个扇区512B BL1使用16KB 32个扇区

@@ -16,5 +16,5 @@ int exynos_pinmux_config(int peripheral, int flags)
 
 int pinmux_decode_periph_id(const void *blob, int node)
 {
-	return 0;
+	return fdtdec_get_int(blob, node, "id", 0);
 }
